@@ -4,7 +4,7 @@
             <h1 class="font-black text-white">Data Absensi</h1>
         </div>
         <?php 
-            $sql = "SELECT * FROM `data_absensi`";
+            $sql = "SELECT * FROM `data_absensi` LIMIT 50";
             $result = $conn->query($sql);
 
             if($result->num_rows > 0)
